@@ -1,0 +1,10 @@
+<div class="delete_confirmation" data-note_id="<%= @note.id %>">
+  <p>Please confirm that you want to delete the following note:</p>
+  <h3><%= @note.title %></h3>
+  <p><%= @note.content %></p>
+  <form class="confirm_delete" action="/notes/<%= @note.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="Delete">
+  </form>
+  <a class="cancel_delete_link" href="/notes/<%= @note.id %>">Cancel</a>
+</div>

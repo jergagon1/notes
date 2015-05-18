@@ -1,0 +1,5 @@
+<label for="note[title]">Title:</label>
+<input type="text" name="note[title]" placeholder="Enter a title" value="<%= @note.try(:title) %>"><br />
+<label for="note[content]">Content:</label>
+<textarea name="note[content]" placeholder="Enter note text here"><%= @note.try(:content) %></textarea><br />
+<input type="submit">

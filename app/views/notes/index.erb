@@ -1,0 +1,14 @@
+<h2><%= @page_title %></h2>
+<form class="create_note" action="/notes/new">
+  <input type="submit" value="Create Note">
+</form>
+<div class="content_area">
+  <% if @content %>
+    <%= erb @content, :layout => false %>
+  <% end %>
+</div>
+<ul class = "notes_list">
+  <% @notes.each do |note| %>
+    <%= erb :'notes/_note', :layout => false, locals: { note: note } %>
+  <% end %>
+</ul>
