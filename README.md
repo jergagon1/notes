@@ -2,10 +2,10 @@
 
 ##A Simple Sinatra Note Application
 
-* Implements CRUD in a MVC application (using Sinatra)
-* Uses Active Record to perform CRUD operations on a database
-* Uses RESTful routes
-* Uses Ajax to convert to a Single Page App
+* Implement CRUD in a MVC application (using Sinatra)
+* Use Active Record to perform CRUD operations on a database
+* Use RESTful routes
+* Use Ajax to convert to a Single Page App
 
 ##Summary
 
@@ -17,4 +17,8 @@ Use Sinatra to create a simple notes application with a single notes table in th
 4. A user can Delete an existing note.
 5. Verify that a user really wants to delete a particular note.
 
-The notes table has a `title` and `content` field.
+##To Do
+
+1. Complete replacement of all crud operations in Ajax
+2. Style Application
+3. Implement Rspec Testing
